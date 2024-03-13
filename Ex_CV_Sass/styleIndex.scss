@@ -1,0 +1,483 @@
+$textcolor1: white;
+$headingcolor: orange;
+$boder-color: rgb(194, 194, 224);
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pageCV {
+    margin-top: 1%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: 1000px;
+
+    #information {
+        span {
+            color: $textcolor1;
+        }
+
+        .content {
+            background-image: url("image/backgroundheader.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 20px 30px;
+            justify-content: space-between;
+
+            .informationItem {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .title {
+                    font-size: 25px;
+                }
+            }
+
+            #contact {
+                align-items: flex-start;
+                row-gap: 15px;
+            }
+
+            .link {
+                color: $textcolor1;
+                padding: 8px;
+                border: 3px solid $textcolor1;
+                border-radius: 5px;
+
+            }
+
+            #follow {
+                row-gap: 10px;
+
+                .socialNetwork {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+
+                    .linkSocialNetwork {
+                        font-size: 15px;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+
+            #visit {
+                row-gap: 10px;
+
+                .linkProject {
+                    font-size: 40px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    #BodyCV {
+        margin: 5px 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-bottom: 20px;
+
+    }
+
+}
+
+.informationItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        font-size: 25px;
+    }
+}
+
+#avatar {
+    row-gap: 10px;
+
+    .imageAvatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+}
+
+#BodyCV {
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-bottom: 20px;
+
+    #FirstPanel {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 10px;
+
+        .Content1OfFirstPanel {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 10px;
+            width: 60%;
+
+            #Welcome {
+                border: 2px solid $boder-color;
+                position: relative;
+                padding: 20% 10px 0px 0px;
+
+                ul {
+                    li {
+                        font-size: 18px;
+                        margin-top: 10px;
+                        line-height: 1.5;
+                    }
+                }
+
+                h1 {
+                    color: white;
+                    text-shadow:
+                        -1px -1px 0 $headingcolor,
+                        1px -1px 0 $headingcolor,
+                        -1px 1px 0 $headingcolor,
+                        1px 1px 0 $headingcolor;
+                    text-transform: uppercase;
+                    font-size: 70px;
+                    position: absolute;
+                    top: 5px;
+                    left: -10px;
+                    margin: 0;
+                }
+            }
+
+            #Specialties {
+                width: 100%;
+                border: 2px solid $boder-color;
+
+                h1 {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    border-bottom: 2px solid $boder-color;
+                    width: 60%;
+                    padding: 10px;
+                }
+
+                .specialtiesIcon {
+                    margin: 5%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .specialtiesItem {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .icon {
+                            font-size: 60px;
+                            padding: 20px 27.5px;
+                            border: 2px solid $headingcolor;
+                            color: $headingcolor;
+                            border-radius: 100%;
+                        }
+
+                        .Shortline {
+                            height: 30px;
+                            width: 4px;
+                            background-color: $headingcolor;
+                            margin: 10px 0px;
+                            border-radius: 10px;
+                        }
+
+                        .specialtiesTitle {
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Content2OfFirstPanel {
+            border: 2px solid $boder-color;
+            width: 40%;
+            padding: 3% 0px;
+
+            h1 {
+                width: 60%;
+                border-bottom: 2px solid $boder-color;
+                padding-left: 10px;
+            }
+
+            .timeline {
+                position: relative;
+                margin-left: 60px;
+
+                .timeLine_container {
+                    padding: 10px 40px;
+                    position: relative;
+                    background-color: inherit;
+
+                    .timeLine_content {
+                        padding: 10px 30px;
+                        background-color: rgb(228, 228, 228);
+                        position: relative;
+                        border-radius: 6px;
+
+                        p {
+                            margin: 0;
+                        }
+
+                        h2 {
+                            margin: 0;
+                            margin-bottom: 10px;
+                            font-size: 18px;
+                        }
+                    }
+
+                }
+
+                .timeLine_container::after {
+                    content: '';
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    right: -17px;
+                    background-color: white;
+                    border: 4px solid #FF9F55;
+                    top: 15px;
+                    border-radius: 50%;
+                    z-index: 1;
+                }
+
+                .timeLine_right::before {
+                    content: " ";
+                    height: 0;
+                    position: absolute;
+                    top: 22px;
+                    width: 0;
+                    z-index: 1;
+                    left: 30px;
+                    border: medium solid white;
+                    border-width: 10px 10px 10px 0;
+                    border-color: transparent rgb(228, 228, 228) transparent transparent;
+                }
+
+                .timeLine_right::after {
+                    left: -11px;
+                }
+            }
+
+            .timeline::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                background-color: black;
+                top: 0;
+                bottom: 0;
+                margin-left: -3px;
+                border-radius: 30px;
+            }
+        }
+    }
+
+    .PerSkillAndSoftSkill {
+        width: 100%;
+        border: 2px solid $boder-color;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    h1 {
+        border-bottom: 2px solid $boder-color;
+        width: 60%;
+        padding-left: 10px;
+    }
+
+    .ListcreativeSkills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+        margin-left: 20px;
+
+        ul {
+            border: 2px solid $headingcolor;
+            border-right: none;
+            border-top: none;
+            padding: 20px 40px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+            position: relative;
+
+            li {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            span {
+                position: absolute;
+                left: -75px;
+                top: 145px;
+                transform: rotate(270deg);
+                font-size: 18px;
+                background-color: $textcolor1;
+                padding: 0px 20px;
+            }
+
+            .titleDev {
+                left: -100px;
+            }
+        }
+    }
+
+    .softwareSkills {
+        ul {
+            padding-left: 0px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            i{
+                font-size: 30px;
+            }
+            span {
+                font-size: 20px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none;
+                column-gap: 10px;
+                padding-left: 0pc;
+                .dotMask {
+                    border-radius: 50%;
+                    color: black;
+                    i{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .swFigma {
+                li:nth-child(-n+8) {
+                    color: $headingcolor;
+                }
+            }
+        
+            .swGitlab{
+                li:nth-child(-n+9) {
+                    color: $headingcolor;
+                }
+            } 
+        
+            .swNodeJS{
+                li:nth-child(-n+5) {
+                    color: $headingcolor;
+                }
+            } 
+        
+            .swwordpress{
+                li:nth-child(-n+6) {
+                    color: $headingcolor;
+                }
+            } 
+        
+            .swjava{
+                li:nth-child(-n+8) {
+                    color: $headingcolor;
+                }
+            } 
+        
+            .swVueJS {
+                li:nth-child(-n+5) {
+                    color: $headingcolor;
+                }
+            }
+        
+            .swHTML {
+                li {
+                    color: $headingcolor;
+                }
+            }
+
+        }
+
+    }
+    .HobbiesAndInterest{
+        margin-top: 10px;
+        border: 2px solid var(--boder-color);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(image/backgroundfooter.webp);
+        .Title_HobbiesAndInterest {
+            font-size: 30px;
+            padding: 20px 10px;
+            font-style: italic;
+    
+        }
+        .listItem {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            font-style: italic;
+            .itemHobbies {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                row-gap: 10px;
+                padding: 20px 27.5px;
+                border: 2px solid $textcolor1;
+                border-radius: 50%;
+                width: 45px;
+                height: 60px;
+                i {
+                    text-align: center;
+                    font-size: 30px;
+                }
+            }
+    
+        }
+    }
+    #Welcome{
+        h1{
+            border-bottom: none;
+        }
+    }
+}
